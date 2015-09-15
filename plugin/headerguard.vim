@@ -43,7 +43,7 @@ endfunction
 
 function! s:HeaderguardLine3()
     if g:headerguard_use_cpp_comments
-        return "#endif // " . s:Func('Name')()
+        return "#endif  // " . s:Func('Name')()
     else
         return "#endif /* " . s:Func('Name')() . " */"
     endif
